@@ -9,9 +9,11 @@ module.exports = {
       './resources/views/*.php'
     ]
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      gradientColorStops: colors,
+
       colors: {
         brand: '#4e73df',
       },

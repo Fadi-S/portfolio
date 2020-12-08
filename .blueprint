@@ -1,0 +1,29 @@
+created:
+    - app/Http/Controllers/ProjectController.php
+    - app/Http/Controllers/PlanController.php
+    - database/factories/ProjectFactory.php
+    - database/factories/PhotoFactory.php
+    - database/factories/PlanFactory.php
+    - database/migrations/2020_12_08_085431_create_projects_table.php
+    - database/migrations/2020_12_08_085432_create_photos_table.php
+    - database/migrations/2020_12_08_085433_create_plans_table.php
+    - app/Models/Project.php
+    - app/Models/Photo.php
+    - app/Models/Plan.php
+    - database/seeders/ProjectSeeder.php
+    - database/seeders/PhotoSeeder.php
+    - tests/Feature/Http/Controllers/ProjectControllerTest.php
+    - tests/Feature/Http/Controllers/PlanControllerTest.php
+    - app/Http/Requests/ProjectStoreRequest.php
+    - app/Http/Requests/PlanStoreRequest.php
+    - resources/views/admin/projects/index.blade.php
+    - resources/views/admin/projects/create.blade.php
+    - resources/views/admin/plans/index.blade.php
+    - resources/views/admin/plans/create.blade.php
+updated:
+    - routes/web.php
+models:
+    Models\User: {  }
+    Project: { name: 'string:400', slug: 'string:32:unique', description: 'nullable longtext', made_at: 'nullable timestamp', relationships: { hasMany: Photo } }
+    Photo: { path: longtext, project_id: 'id foreign' }
+    Plan: { name: 'string:32', description: 'nullable string:250', price: int, benefits: json }
