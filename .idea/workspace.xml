@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.blueprint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PlanController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PlanStoreRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProjectStoreRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Photo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Plan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/PhotoFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/PlanFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ProjectFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_085431_create_projects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_085432_create_photos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_085433_create_plans_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/PhotoSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/large/welcome-page.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/medium/welcome-page.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/small/welcome-page.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/plans/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/plans/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/projects/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/PlanControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/ProjectControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draft.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/draft.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +201,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607407358970</updated>
       <workItem from="1607407360706" duration="8628000" />
-      <workItem from="1607433800901" duration="9526000" />
+      <workItem from="1607433800901" duration="10972000" />
     </task>
     <task id="LOCAL-00001" summary="Added boilerplate">
       <created>1607417347146</created>
