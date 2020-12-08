@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +201,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607407358970</updated>
       <workItem from="1607407360706" duration="8628000" />
-      <workItem from="1607433800901" duration="10972000" />
+      <workItem from="1607433800901" duration="11155000" />
     </task>
     <task id="LOCAL-00001" summary="Added boilerplate">
       <created>1607417347146</created>
