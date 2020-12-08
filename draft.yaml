@@ -1,0 +1,49 @@
+models:
+  Project:
+    name: string:400
+    slug: string:32:unique
+    desciption: nullable longtext
+    made_at: nullable timestamp
+    relationships:
+      hasMany: Photo
+  Photo:
+    path: longtext
+    project_id: id foreign
+    relationships:
+      belongsTo: Project
+  Plan:
+    name: string:32
+    description: nullable string:250
+    price: int
+    benefits: json
+
+seeders: Project, Photo
+
+controllers:
+  Project:
+    index:
+      query: all
+      render: admin.projects.index with:projects
+
+    create:
+      render: admin.projects.create
+
+    store:
+      validate: name, slug, desciption, made_at
+      save: project
+      flash: project.name
+      redirect: admin.projects.index
+
+  Plan:
+    index:
+      query: all
+      render: admin.plans.index with:plans
+
+    create:
+      render: admin.plans.create
+
+    store:
+      validate: name, price, desciption, benefits
+      save: plan
+      flash: plan.name
+      redirect: admin.projects.index
