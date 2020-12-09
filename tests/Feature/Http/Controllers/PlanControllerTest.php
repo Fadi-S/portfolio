@@ -5,7 +5,6 @@ namespace Tests\Feature\Http\Controllers;
 use App\Models\Plan;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use JMac\Testing\Traits\AdditionalAssertions;
 use Tests\TestCase;
 
 /**
@@ -13,7 +12,7 @@ use Tests\TestCase;
  */
 class PlanControllerTest extends TestCase
 {
-    use AdditionalAssertions, RefreshDatabase, WithFaker;
+    use RefreshDatabase, WithFaker;
 
     /**
      * @test
@@ -62,7 +61,11 @@ class PlanControllerTest extends TestCase
         $name = $this->faker->name;
         $price = $this->faker->word;
         $description = $this->faker->text;
-        $benefits = $this->faker->;
+        $benefits = [
+            'Benefit 1',
+            'Benefit 2',
+            'Benefit 3',
+        ];
 
         $response = $this->post(route('plan.store'), [
             'name' => $name,
