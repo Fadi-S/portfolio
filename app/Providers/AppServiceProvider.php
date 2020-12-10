@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \View::share('adminUrl', \Config::get('app.admin_url'));
+
+        if(app()->environment() == 'local')
+            \Schema::defaultStringLength(191);
     }
 }

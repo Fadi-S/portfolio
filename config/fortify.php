@@ -2,6 +2,7 @@
 
 use App\Providers\RouteServiceProvider;
 use Laravel\Fortify\Features;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 return [
 
@@ -46,7 +47,7 @@ return [
     |
     */
 
-    'username' => 'username',
+    'username' => 'email',
 
     'email' => 'email',
 
@@ -61,7 +62,7 @@ return [
     |
     */
 
-    'home' => '/admin',
+    'home' => Config::get('app.admin_url'),
 
     /*
     |--------------------------------------------------------------------------
@@ -74,7 +75,7 @@ return [
     |
     */
 
-    'prefix' => '',
+    'prefix' => Config::get('app.admin_url'),
 
     'domain' => null,
 
@@ -89,7 +90,7 @@ return [
     |
     */
 
-    'middleware' => ['web'],
+    'middleware' => ['web', ProtectAgainstSpam::class],
 
     /*
     |--------------------------------------------------------------------------
@@ -131,9 +132,7 @@ return [
     */
 
     'features' => [
-        Features::registration(),
         Features::resetPasswords(),
-        Features::emailVerification(),
         Features::updatePasswords(),
         Features::twoFactorAuthentication([
             'confirmPassword' => true,

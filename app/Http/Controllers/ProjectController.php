@@ -9,10 +9,9 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
     /**
-     * @param \Illuminate\Http\Request $request
      * @return mixed
      */
-    public function index(Request $request)
+    public function index()
     {
         $projects = Project::all();
 

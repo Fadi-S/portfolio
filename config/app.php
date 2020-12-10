@@ -56,6 +56,8 @@ return [
 
     'asset_url' => env('ASSET_URL', null),
 
+    'admin_url' => env('ADMIN_PANEL', 'admin'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -174,6 +176,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        App\Providers\FortifyServiceProvider::class,
 
     ],
 

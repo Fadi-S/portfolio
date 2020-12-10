@@ -16,6 +16,7 @@ module.exports = {
 
       colors: {
         brand: '#4e73df',
+        cyan: colors.cyan,
       },
       rotate: {
         '-180': '-180deg',
@@ -64,5 +65,7 @@ module.exports = {
 
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
