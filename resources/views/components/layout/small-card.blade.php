@@ -20,4 +20,9 @@
             </div>
         </div>
     </div>
+    @isset($footer)
+        <div class="bg-gray-50 px-5 py-3">
+            {{ $footer }}
+        </div>
+    @endisset
 </div>
