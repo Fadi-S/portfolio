@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\ShowPageViews;
 use App\Models\PageView;
 use App\Http\Controllers\{PlanController, ProjectController};
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,8 @@ Route::prefix(Config::get('app.admin_url'))
         Route::get('/', fn() => view('admin.dashboard'));
 
         Route::get('/profile', fn() => view('admin.profile'));
+
+        Route::get('/views', ShowPageViews::class);
 
         Route::resource('project', ProjectController::class)->only('index', 'create', 'store');
 
