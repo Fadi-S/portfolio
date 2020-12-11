@@ -1,7 +1,7 @@
 <x-auth>
 
     <div>
-        <img class="h-12 w-auto" src="{{ url('images/logo.svg') }}" alt="Workflow">
+        <img class="mx-auto bg-gray-200 rounded-full p-1 h-16 w-auto" src="{{ url('images/logo.svg') }}" alt="Workflow">
         <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
             Sign in to your account
         </h2>

@@ -5,15 +5,15 @@
         <div class="relative bg-gray-50">
             <div x-data="{ open: false }" class="relative bg-white shadow">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6">
-                    <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-                        <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <div class="flex justify-between items-center md:justify-start md:space-x-10">
+                        <div class="flex justify-start lg:w-0 lg:flex-1 my-1">
                             <a href="{{ url('/') }}">
                                 <span class="sr-only">Fadi Sarwat Portfolio</span>
-                                <img class="h-8 w-auto sm:h-10" src="{{ asset('images/logo.svg') }}" alt="Logo">
+                                <img class="p-1 bg-gray-200 rounded-full h-14 md:h-20 w-auto" src="{{ asset('images/logo.svg') }}" alt="Logo">
                             </a>
                         </div>
 
-                        <nav class="space-x-10 md:flex hidden">
+                        <nav class="py-6 space-x-10 md:flex hidden">
 
                             <a href="{{ url('/') }}" class="text-base font-medium text-gray-500 hover:text-gray-900 rounded-lg hover:bg-gray-200 px-4 py-2">
                                 Home

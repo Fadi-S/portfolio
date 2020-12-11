@@ -47,7 +47,7 @@
                                 </button>
                             </div>
                             <div class="flex-shrink-0 flex items-center px-4">
-                                <img class="h-8 w-auto" src="{{ asset('images/logo.svg') }}" alt="logo">
+                                <img class="h-10 w-auto bg-white rounded-full p-1" src="{{ asset('images/logo.svg') }}" alt="logo">
                                 <span class="text-xl font-bold text-gray-100 ml-6">Portfolio</span>
                             </div>
                             <nav class="mt-5 flex-shrink-0 h-full overflow-y-auto" aria-label="Sidebar">
@@ -107,7 +107,7 @@
                         <!-- Sidebar component, swap this element with another sidebar if you like -->
                         <div class="flex flex-col flex-grow bg-gray-700 pt-5 pb-4 overflow-y-auto">
                             <div class="flex items-center flex-shrink-0 px-4">
-                                <img class="h-8 w-auto" src="{{ asset('images/logo.svg') }}" alt="logo">
+                                <img class="h-10 w-auto bg-white rounded-full p-1" src="{{ asset('images/logo.svg') }}" alt="logo">
                                 <span class="text-xl font-bold text-gray-100 ml-6">Portfolio</span>
                             </div>
                             <nav class="mt-5 flex-1 flex flex-col overflow-y-auto" aria-label="Sidebar">
