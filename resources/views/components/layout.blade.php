@@ -9,7 +9,7 @@
                         <div class="flex justify-start lg:w-0 lg:flex-1">
                             <a href="{{ url('/') }}">
                                 <span class="sr-only">Fadi Sarwat Portfolio</span>
-                                <img class="h-8 w-auto sm:h-10" src="{{ asset('images/logo.png') }}" alt="Logo">
+                                <img class="h-8 w-auto sm:h-10" src="{{ asset('images/logo.svg') }}" alt="Logo">
                             </a>
                         </div>
 
@@ -58,7 +58,7 @@
                         <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div class="px-5 pt-4 flex items-center justify-between">
                                 <div>
-                                    <img class="h-8 w-auto sm:h-10" src="{{ asset('images/logo.png') }}" alt="Logo">
+                                    <img class="h-8 w-auto sm:h-10" src="{{ asset('images/logo.svg') }}" alt="Logo">
                                 </div>
                                 <div class="-mr-2">
                                     <button @click="open=false" type="button"
