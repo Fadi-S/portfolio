@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="">
+    <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="Add adsense to base layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +223,7 @@
       <workItem from="1607645822198" duration="3000" />
       <workItem from="1607649789471" duration="17000" />
       <workItem from="1607711116391" duration="2524000" />
-      <workItem from="1618307436615" duration="52000" />
+      <workItem from="1618307436615" duration="391000" />
     </task>
     <task id="LOCAL-00001" summary="Added boilerplate">
       <created>1607417347146</created>
@@ -230,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607417347146</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add adsense to base layout">
+      <created>1618307534829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618307534829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added boilerplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added boilerplate" />
+    <MESSAGE value="Add adsense to base layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add adsense to base layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

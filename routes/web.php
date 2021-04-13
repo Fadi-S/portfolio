@@ -17,6 +17,10 @@ Route::get('redirect', function () {
     return redirect(request('to'));
 });
 
+Route::get('/pricing', function () {
+    return redirect("https://www.fiverr.com/share/b0Qxx1");
+})->middleware('save');
+
 Route::prefix(Config::get('app.admin_url'))
     ->middleware('auth')->group(function () {
 
