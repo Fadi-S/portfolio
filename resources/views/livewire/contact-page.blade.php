@@ -108,7 +108,7 @@
                             </div>
 
                             <div class="sm:col-span-2 sm:flex sm:justify-end">
-                                <x-form.button type="button"
+                                <x-form.button type="submit"
                                                data-sitekey="{{ config('app.recaptcha_key') }}"
                                                data-callback='handle'
                                                data-action='submit'>
