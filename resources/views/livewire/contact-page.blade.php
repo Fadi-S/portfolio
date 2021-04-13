@@ -127,19 +127,21 @@
                             @endif
                         </form>
 
-                        <script src="https://www.google.com/recaptcha/api.js?render={{ config('app.recaptcha_key') }}"></script>
-                        <script>
-                            function handle(e) {
-                                grecaptcha.ready(function () {
-                                    grecaptcha.execute('{{ config('app.recaptcha_key') }}', {action: 'submit'})
-                                        .then(function (token) {
-                                        @this.set('captcha', token);
+                        @push('scripts')
+                            <script src="https://www.google.com/recaptcha/api.js?render={{ config('app.recaptcha_key') }}"></script>
+                            <script>
+                                function handle(e) {
+                                    grecaptcha.ready(function () {
+                                        grecaptcha.execute('{{ config('app.recaptcha_key') }}', {action: 'submit'})
+                                            .then(function (token) {
+                                            @this.set('captcha', token);
 
-                                        console.log(token);
-                                        });
-                                })
-                            }
-                        </script>
+                                            console.log(token);
+                                            });
+                                    })
+                                }
+                            </script>
+                        @endpush
                     </div>
                 </div>
             </div>

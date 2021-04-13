@@ -7,19 +7,19 @@
     <script data-ad-client="ca-pub-9069140631047993" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <title>{{ $title }}</title>
 
-    @livewireScripts
+    @livewireStyles
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
 </head>
 <body>
 
 {{ $slot }}
 
+
+@livewireScripts
 <script src="{{ url('js/app.js') }}"></script>
 
 @stack('scripts')
 
 @stack('modals')
-
-@livewireStyles
 </body>
 </html>
