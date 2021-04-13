@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="Fix navbar z index on small screens">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/contact-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/contact-page.blade.php" afterDir="false" />
+    <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="Add title in contact page">
+      <change beforePath="$PROJECT_DIR$/resources/views/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/portfolio.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +219,7 @@
       <workItem from="1607645822198" duration="3000" />
       <workItem from="1607649789471" duration="17000" />
       <workItem from="1607711116391" duration="2524000" />
-      <workItem from="1618307436615" duration="13570000" />
+      <workItem from="1618307436615" duration="13669000" />
     </task>
     <task id="LOCAL-00001" summary="Added boilerplate">
       <created>1607417347146</created>
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618326071368</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add title in contact page">
+      <created>1618326263189</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618326263189</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +295,8 @@
     <MESSAGE value="Small design changes" />
     <MESSAGE value="Ignoring development css and js files" />
     <MESSAGE value="Fix navbar z index on small screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix navbar z index on small screens" />
+    <MESSAGE value="Add title in contact page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add title in contact page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
