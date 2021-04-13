@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\ContactPage;
 use App\Http\Livewire\ShowPageViews;
 use App\Models\PageView;
 use App\Http\Controllers\{PlanController, ProjectController};
@@ -9,6 +10,9 @@ Route::get('/', fn() => view('welcome'))
     ->middleware('save');
 
 Route::get('/portfolio', fn() => view('portfolio'))
+    ->middleware('save');
+
+Route::get('/contact', ContactPage::class)
     ->middleware('save');
 
 Route::get('redirect', function () {
@@ -21,7 +25,7 @@ Route::get('/pricing', function () {
     return redirect("https://www.fiverr.com/share/b0Qxx1");
 })->middleware('save');
 
-Route::prefix(Config::get('app.admin_url'))
+Route::prefix(config('app.admin_url'))
     ->middleware('auth')->group(function () {
 
         Route::get('/', fn() => view('admin.dashboard'));
