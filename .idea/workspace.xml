@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="Add cona">
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ContactPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ContactPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/contact-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/contact-page.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +219,7 @@
       <workItem from="1607645822198" duration="3000" />
       <workItem from="1607649789471" duration="17000" />
       <workItem from="1607711116391" duration="2524000" />
-      <workItem from="1618307436615" duration="10483000" />
+      <workItem from="1618307436615" duration="10563000" />
     </task>
     <task id="LOCAL-00001" summary="Added boilerplate">
       <created>1607417347146</created>

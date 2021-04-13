@@ -134,6 +134,8 @@
                                     grecaptcha.execute('{{ config('app.recaptcha_key') }}', {action: 'submit'})
                                         .then(function (token) {
                                         @this.set('captcha', token);
+
+                                        console.log(token);
                                         });
                                 })
                             }
