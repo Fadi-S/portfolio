@@ -14,9 +14,9 @@
             <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
                     <a href="{{ url('/pricing') }}" target="_blank"
-                       class="bg-gradient-to-r from-blue-500 to-red-400 hover:from-red-400 hover:to-blue-500
-                    w-full flex items-center justify-center px-8 py-3 border border-transparent transition-transform duration-300
-                     text-base font-medium rounded-md text-white md:py-4 md:text-lg md:px-10 hover:scale-110">
+                       class="bg-blue-600 hover:bg-blue-700
+                    w-full flex items-center justify-center px-8 py-3 border border-transparent transition transform duration-700
+                     text-base font-medium rounded-md text-white md:py-4 md:text-lg md:px-10 hover:scale-110 hover:-translate-y-1">
                         Order your website now!
                     </a>
                 </div>

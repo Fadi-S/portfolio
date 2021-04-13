@@ -1,8 +1,8 @@
 <x-base>
     <x-slot name="title">{{ $title ?? "Fadi Sarwat Portfolio" }}</x-slot>
 
-    <div class="min-h-screen flex flex-col justify-between">
-        <div class="relative bg-gray-50">
+    <div class="min-h-screen flex flex-col justify-between bg-gray-100">
+        <div class="relative">
             <div x-data="{ open: false }" class="relative bg-white shadow">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6">
                     <div class="flex justify-between items-center md:justify-start md:space-x-10">
@@ -115,7 +115,7 @@
                 </div>
                 <div class="mt-8 md:mt-0 md:order-1">
                     <p class="text-center text-base text-gray-400">
-                        &copy; 2021 Fadi Sarwat. All rights reserved.
+                        &copy; {{ now()->year }} Fadi Sarwat. All rights reserved.
                     </p>
                 </div>
             </div>
