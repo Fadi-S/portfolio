@@ -15,7 +15,6 @@
 
                         <nav class="py-6 space-x-10 md:flex hidden">
 
-
                             <x-layout.navbar.link url="/">
                                 Home
                             </x-layout.navbar.link>
@@ -55,7 +54,7 @@
                          x-transition:leave="duration-100 ease-in"
                          x-transition:leave-start="opacity-100 scale-100"
                          x-transition:leave-end="opacity-0 scale-95"
-                         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10">
                         <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div class="px-5 pt-4 flex items-center justify-between">
                                 <div>
@@ -85,7 +84,7 @@
                                  hover:text-gray-900 hover:bg-gray-50" role="menuitem">Pricing</a>
 
                                     <a href="{{ url('contact') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700
-                                 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Contact</a>
+                                 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Contact Me</a>
                                 </div>
                             </div>
                         </div>

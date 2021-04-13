@@ -813,6 +813,12 @@ select {
 .z-0 {
 	z-index: 0;
 }
+.z-20 {
+	z-index: 20;
+}
+.z-30 {
+	z-index: 30;
+}
 .col-span-2 {
 	grid-column: span 2 / span 2;
 }
