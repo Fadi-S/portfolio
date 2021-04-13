@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="Update to tailwind JIT">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ContactPage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_13_115210_create_contacts_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/textarea.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/links/fiverr.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/links/github.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/success.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/svg/check.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/svg/exclamation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/svg/mail.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/svg/spinner.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/contact-page.blade.php" afterDir="false" />
+    <list default="true" id="bfe513e9-e120-4a6e-9e14-ec699a5c1bc7" name="Default Changelist" comment="Add cona">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ContactPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ContactPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/contact-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/contact-page.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +222,7 @@
       <workItem from="1607645822198" duration="3000" />
       <workItem from="1607649789471" duration="17000" />
       <workItem from="1607711116391" duration="2524000" />
-      <workItem from="1618307436615" duration="8972000" />
+      <workItem from="1618307436615" duration="10229000" />
     </task>
     <task id="LOCAL-00001" summary="Added boilerplate">
       <created>1607417347146</created>

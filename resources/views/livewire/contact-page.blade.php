@@ -108,7 +108,10 @@
                             </div>
 
                             <div class="sm:col-span-2 sm:flex sm:justify-end">
-                                <x-form.button type="submit">
+                                <x-form.button type="button"
+                                               data-sitekey="{{ config('app.recaptcha_key') }}"
+                                               data-callback='handle'
+                                               data-action='submit'>
                                     <x-slot name="svg">
                                         <x-svg.spinner wire:loading wire:target="submit" />
                                         <x-svg.mail wire:loading.remove wire:target="submit" />
@@ -123,6 +126,18 @@
                                            :title="session('success')['title']" />
                             @endif
                         </form>
+
+                        <script src="https://www.google.com/recaptcha/api.js?render={{ config('app.recaptcha_key') }}"></script>
+                        <script>
+                            function handle(e) {
+                                grecaptcha.ready(function () {
+                                    grecaptcha.execute('{{ config('app.recaptcha_key') }}', {action: 'submit'})
+                                        .then(function (token) {
+                                        @this.set('captcha', token);
+                                        });
+                                })
+                            }
+                        </script>
                     </div>
                 </div>
             </div>

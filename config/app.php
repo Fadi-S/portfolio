@@ -58,6 +58,9 @@ return [
 
     'admin_url' => env('ADMIN_PANEL', 'admin'),
 
+    'recaptcha_key' => env('GOOGLE_RECAPTCHA_KEY', ''),
+    'recaptcha_secret' => env('GOOGLE_RECAPTCHA_SECRET', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
