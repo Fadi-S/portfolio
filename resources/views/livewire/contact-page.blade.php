@@ -1,5 +1,9 @@
 <div>
 
+    <x-slot name="title">
+        Contact Me - Portfolio
+    </x-slot>
+
     <div class="bg-transparent">
         <div class="max-w-7xl mx-auto py-16 sm:py-24 sm:px-6 lg:px-8">
             <div class="relative bg-white shadow-xl">
@@ -76,7 +80,7 @@
 
                     <!-- Contact form -->
                     <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                        <h3 class="text-lg font-medium text-gray-900">Send us a message</h3>
+                        <h3 class="text-lg font-medium text-gray-900">Send me a message</h3>
                         <form wire:submit.prevent="submit" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
 
                             <x-form.input label="First name"
