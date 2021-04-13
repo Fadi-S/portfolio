@@ -62,7 +62,7 @@ return [
     |
     */
 
-    'home' => Config::get('app.admin_url'),
+    'home' => config('app.admin_url'),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +75,7 @@ return [
     |
     */
 
-    'prefix' => Config::get('app.admin_url'),
+    'prefix' => config('app.admin_url'),
 
     'domain' => null,
 

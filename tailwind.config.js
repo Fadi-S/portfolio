@@ -1,15 +1,16 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  mode: "jit",
   purge: {
     layers: ['utilities', 'components', 'base'],
     content: [
-      './resources/views/*/*.php',
-      './resources/views/*/*/*.php',
-      './resources/views/*.php'
+      './resources/**/*.blade.php',
+      './resources/**/*.js',
+      './resources/**/*.vue',
     ]
   },
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       gradientColorStops: colors,

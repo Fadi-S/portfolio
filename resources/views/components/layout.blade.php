@@ -15,21 +15,22 @@
 
                         <nav class="py-6 space-x-10 md:flex hidden">
 
-                            <a href="{{ url('/') }}" class="text-base font-medium text-gray-500 hover:text-gray-900 rounded-lg hover:bg-gray-200 px-4 py-2">
+
+                            <x-layout.navbar.link url="/">
                                 Home
-                            </a>
+                            </x-layout.navbar.link>
 
-                            <a href="{{ url('/portfolio') }}" class="text-base font-medium text-gray-500 hover:text-gray-900 rounded-lg hover:bg-gray-200 px-4 py-2">
+                            <x-layout.navbar.link url="/portfolio">
                                 Portfolio
-                            </a>
+                            </x-layout.navbar.link>
 
-                            <a href="{{ url('/pricing') }}" class="text-base font-medium text-gray-500 hover:text-gray-900 rounded-lg hover:bg-gray-200 px-4 py-2">
+                            <x-layout.navbar.link url="/pricing">
                                 Pricing
-                            </a>
+                            </x-layout.navbar.link>
 
-                            <a href="{{ url('contact') }}" class="text-base font-medium text-gray-500 hover:text-gray-900 rounded-lg hover:bg-gray-200 px-4 py-2">
+                            <x-layout.navbar.link url="/contact">
                                 Contact Me
-                            </a>
+                            </x-layout.navbar.link>
 
                         </nav>
 
