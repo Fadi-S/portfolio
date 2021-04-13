@@ -36,8 +36,6 @@ class ContactPage extends Component
         $response = \Http::post('https://www.google.com/recaptcha/api/siteverify?secret=' . config('app.recaptcha_secret') . '&response=' . $token);
         $this->captcha = $response->json()['score'];
 
-        dump($this->captcha);
-
         if ($this->captcha > 0.3) {
             $this->submit();
         } else {
@@ -52,6 +50,8 @@ class ContactPage extends Component
 
     public function submit()
     {
+        dump($this->captcha);
+
         $validated = $this->validate();
         Contact::create($validated);
 
