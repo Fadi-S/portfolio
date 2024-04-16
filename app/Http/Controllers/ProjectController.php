@@ -2,30 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ProjectResource;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::published()->get();
-
-        return $projects->map(fn($project) => [
-            "name" => $project->name,
-            "description" => $project->short_description,
-            "logo" => "https://via.placeholder.com/150/150",
-            "link" => [
-                "href" => $project->url,
-                "label" => $project->url,
-            ],
-        ]);
+        return ProjectResource::collection(
+            Project::published()->get()
+        );
     }
 
     public function show(Project $project)
     {
-        return [
-            "project" => $project,
-            ];
+        return ProjectResource::make($project);
     }
 }

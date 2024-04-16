@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -12,7 +13,17 @@ class Project extends Model
 
     protected $casts = [
         'images' => 'array',
+        "started_at" => "date",
+        "ended_at" => "date",
     ];
+
+    public function imageLinks(): Attribute
+    {
+        return Attribute::get(
+            fn() => collect($this->images)
+            ->map(fn($image) => url($image))
+        );
+    }
 
     protected static function boot()
     {
