@@ -28,8 +28,8 @@ class ContactController extends Controller
 
         $message = Message::create($validated);
 
-//        Mail::to(["fady.sarwat377@gmail.com"])->send(new ContactAttemptMail($message));
-
+        Mail::to(["fady.sarwat377@gmail.com"])->send(new ContactAttemptMail($message));
+        
         return response()->json(['message' => 'Message sent successfully!']);
     }
 }

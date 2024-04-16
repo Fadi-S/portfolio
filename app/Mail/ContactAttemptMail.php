@@ -28,7 +28,7 @@ class ContactAttemptMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Attempt Mail',
+            subject: $this->message->subject . ' - ' . $this->message->first_name,
         );
     }
 
@@ -38,7 +38,8 @@ class ContactAttemptMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.message',
+            markdown: 'mail.message',
+            with: ['message' => $this->message],
         );
     }
 
