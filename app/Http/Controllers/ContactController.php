@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\Recaptcha;
 use App\Mail\ContactAttemptMail;
 use App\Models\Message;
 use Illuminate\Http\Request;
@@ -16,6 +17,10 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
+        if (!Recaptcha::check($request->get("token"))) {
+            return response()->json(['message' => 'Recaptcha failed!'], 422);
+        }
+
         $validated = $request->validate([
             'first_name' => 'required|string|max:100',
             'last_name' => 'required|string|max:100',
@@ -29,7 +34,7 @@ class ContactController extends Controller
         $message = Message::create($validated);
 
         Mail::to(["fady.sarwat377@gmail.com"])->send(new ContactAttemptMail($message));
-        
+
         return response()->json(['message' => 'Message sent successfully!']);
     }
 }
